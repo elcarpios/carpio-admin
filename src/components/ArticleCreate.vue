@@ -6,13 +6,16 @@
                 <input name="author" placeholder="Author" type="text" tabindex="1" required autofocus>
             </fieldset>
             <fieldset>
-                <input name="subtitle" placeholder="Subtitle" type="text" tabindex="2" required>
+                <input name="title" placeholder="Title" type="text" tabindex="2" required>
             </fieldset>
             <fieldset>
-                <input name="media" placeholder="Image" type="url" tabindex="3" required>
+                <input name="subtitle" placeholder="Subtitle" type="text" tabindex="3" required>
             </fieldset>
             <fieldset>
-                <textarea name="excerpt" placeholder="Content" tabindex="4" required></textarea>
+                <input name="media" placeholder="Image" type="url" tabindex="4" required>
+            </fieldset>
+            <fieldset>
+                <textarea name="excerpt" placeholder="Content" tabindex="5" required></textarea>
             </fieldset>
             <input type="hidden" name="date" :value="new Date()">
         </form>
@@ -55,7 +58,7 @@ function insertPost() {
         }
         console.log(response)
     })
-    .catch(error => {console.log(error));
+    .catch(error => { console.log(error) });
 }
 
 export default {
