@@ -1,0 +1,1 @@
+/Users/victorcarpio/Desktop/CarpioStuff/carpio-project/src/components/elements/ArticleMosaic.vue
